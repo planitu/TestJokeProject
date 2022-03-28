@@ -1,0 +1,28 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "3.0.3",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "acdfd6b9cfb3f89ef44a9b23e52095faac3871e8d9366f557f1e1dab6850d2be",
+      "name" : "Haptica",
+      "container" : "Haptica.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "4595900493b62fd30efb3cf0ce14c6bb39373fe0bdf7071b3cd6bb36a22620c2",
+      "name" : "Haptica",
+      "container" : "Haptica.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}
