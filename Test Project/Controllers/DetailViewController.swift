@@ -31,9 +31,13 @@ class DetailViewController: UIViewController {
         
         nameLabel.text = "\n  Имя: " + worker.name
         nameLabel.numberOfLines = 0
+        nameLabel.textColor = .black
         phoneLabel.text = "  Телефон: " + worker.phoneNumber
+        phoneLabel.textColor = .black
         skillsLabel.numberOfLines = 0
         skillsLabel.text = "  Навыки: \n\n"
+        skillsLabel.textColor = .black
+
         for i in worker.skills {
             skillsLabel.text! += "   - \(i)\n"
         }
