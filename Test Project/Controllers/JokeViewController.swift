@@ -50,20 +50,19 @@ class JokeViewController: UIViewController {
         present(alert, animated: true)
     }
     
- 
-    private func addJokeInTable() {
-        tableView.insertRows(at: [IndexPath(row: jokeStorage.count - 1, section: 0)], with: .fade)
-    }
-    
     
     @IBAction func didTapButton(_ sender: UIButton) {
         
         Haptic.impact(.soft).generate()
         network.getModelFromURL(get: JokeChuck.self, from: NetworkManager.APIs.jokeChuck.rawValue) { model in
             
-            self.jokeStorage.append(model.joke)
+            self.jokeStorage.insert(model.joke, at: 0)
             self.addJokeInTable()
         }
+    }
+    
+    private func addJokeInTable() {
+        tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .fade)
     }
 }
 
